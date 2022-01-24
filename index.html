@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <main id="main">
+        <header>
+            <h1 id="title">Company Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the company</p>
+          </header>
+      <form id="survey-form">
+        <div class="input-items">
+          <label for="name" id="name-label">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your Name"
+            required
+          />
+          <label for="email" id="email-label">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your Email Address"
+            required
+          />
+          <label for="age" id="number-label">Age <span class="note">(Optional)</span></label>
+          <input
+            type="number"
+            id="number"
+            name="age"
+            placeholder="Enter your Age"
+            min="10"
+            max="100"
+          />
+        </div>
+        <div class="select-items">
+          <p>What's your current role?</p>
+          <select id="dropdown" name="role" required>
+            <optgroup>
+                <option disabled selected value="">Select current role</option>
+            <option name value="student">Student</option>
+            <option value="part-time">Part Time Job</option>
+            <option value="full-time">Full Time Job</option>
+            <option value="prefer-no">Prefer not to say</option>
+            <option value="other">Other</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="radio-items">
+          <p>Would you recommend the company to a friend?</p>
+          <label
+            ><input
+              type="radio"
+              id="rate1"
+              name="rate"
+              value="sure"
+              checked
+            /> Sure</label
+          >
+          <label
+            ><input
+              type="radio"
+              id="rate2"
+              name="rate"
+              value="maybe"
+            /> Maybe</label
+          >
+          <label
+            ><input type="radio" id="rate3" name="rate" value="not-sure" /> Not
+            Sure</label
+          >
+        </div>
+        <div class="check-items">
+          <p>What Would you like to see improved? <span class="note">(Check all that apply)</span></p>
+          <label
+            ><input
+              type="checkbox"
+              id="recommend1"
+              name="recommend"
+              value="front team"
+            /> Front-end Team</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="recommend2"
+              name="recommend"
+              value="back team"
+            /> Back-end Team</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="recommend3"
+              name="recommend"
+              value="markting team"
+            /> Markting Team</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="recommend4"
+              name="recommend"
+              value="design team"
+            /> Design Team</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="recommend5"
+              name="recommend"
+              value="blog posts"
+            /> Blog Posts</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="recommend6"
+              name="recommend"
+              value="youtube videos"
+            /> Youtube Videos</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="recommend7"
+              name="recommend"
+              value="Forum"
+            /> Forum</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              id="recommend8"
+              name="recommend"
+              value="meetings"
+            /> Meetings</label
+          >
+        </div>
+        <div class="textarea-items">
+          <p><label for="message">Any comments of suggestions?</label></p>
+          <textarea id="message" placeholder="Write your message here..."></textarea>
+        </div>
+        <input type="submit" id="submit" value="Submit" />
+      </form>
+    </main>
+  </body>
+</html>
